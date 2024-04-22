@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+<head>
+    <style>
+        .container-fluid {
+            padding: 0 2rem; 
+        }
+
+        .card {
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+
+        .card-header {
+            background-color: #D7A9B7;
+            color: white;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .list-group-item {
+            background-color: #F8F8F8;
+            border: none;
+            padding: .75rem 1.25rem;
+        }
+
+        .btn-outline-secondary {
+            color: #6c757d;
+            border-color: #6c757d;
+        }
+
+            .btn-outline-secondary:hover {
+                color: #fff;
+                background-color: #6c757d;
+                border-color: #6c757d;
+            }
+        .btn .span {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Meetings
+                    </div>
+                    <form asp-controller="Collaborator" asp-action="GoMeetingMinutes" method="post">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div>Project Name</div>
+                                <div>Monday, January 1, 2025, 5:00 PM</div>
+                                <button type="submit" class="login-btn">Join</button>
+                            </li>
+                            <li class="list-group-item">
+                                <div>Project Name</div>
+                                <div>Monday, January 1, 2025, 5:00 PM</div>
+                                <button type="submit" class="login-btn">Join</button>
+                            </li>
+                            <li class="list-group-item">
+                                <div>Project Name</div>
+                                <div>Monday, January 1, 2025, 5:00 PM</div>
+                                <button type="submit" class="login-btn">Join</button>
+                            </li>
+                            <li class="list-group-item">
+                                <div>Project Name</div>
+                                <div>Monday, January 1, 2025, 5:00 PM</div>
+                                <button type="submit" class="login-btn">Join</button>
+                            </li>
+                            <li class="list-group-item">
+                                <div>Project Name</div>
+                                <div>Monday, January 1, 2025, 5:00 PM</div>
+                                <button type="submit" class="login-btn">Join</button>
+                            </li>
+                            <li class="list-group-item">
+                                <div>Project Name</div>
+                                <div>Monday, January 1, 2025, 5:00 PM</div>
+                                <button type="submit" class="login-btn">Join</button>
+                            </li>
+                            <li class="list-group-item">
+                                <div>Project Name</div>
+                                <div>Monday, January 1, 2025, 5:00 PM</div>
+                                <button type="submit" class="login-btn">Join</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        User’s To Do List
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div>Project Name</div>
+                                    <div>Action Item</div>
+                                    <div>Monday, January 1, 2025, 5:00 PM</div>
+                                
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <span>&#x270E;</span>
+                                    </button>
+                                    <span class="icon-placeholder">✏️</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div>Project Name</div>
+                                    <div>Action Item</div>
+                                    <div>Monday, January 1, 2025, 5:00 PM</div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <span>&#x270E;</span>
+                                    </button>
+                                    <span class="icon-placeholder">✏️</span>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div>Project Name</div>
+                                    <div>Action Item</div>
+                                    <div>Monday, January 1, 2025, 5:00 PM</div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <span>&#x270E;</span>
+                                    </button>
+                                    <span class="icon-placeholder">✏️</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div>Project Name</div>
+                                    <div>Action Item</div>
+                                    <div>Monday, January 1, 2025, 5:00 PM</div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <span>&#x270E;</span>
+                                    </button>
+                                    <span class="icon-placeholder">✏️</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div>Project Name</div>
+                                    <div>Action Item</div>
+                                    <div>Monday, January 1, 2025, 5:00 PM</div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <span>&#x270E;</span>
+                                    </button>
+                                    <span class="icon-placeholder">✏️</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

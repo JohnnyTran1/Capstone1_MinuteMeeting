@@ -1,0 +1,87 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #D7A9B7;
+            padding: 40px;
+        }
+
+        .login-container {
+            max-width: 300px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+            .login-container img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+        .form-input {
+            margin-bottom: 15px;
+            display: block;
+        }
+
+            .form-input label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .form-input input {
+                width: calc(100% - 20px);
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                display: block;
+            }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: #7D1935;
+            cursor: pointer;
+        }
+
+            .login-btn:hover {
+                background-color: #a8325e;
+            }
+    </style>
+</head>
+<body>
+
+
+    <div class="login-container">
+        <div style="text-align:center;">
+            <img src="~/Images/MINUTEMASTER.webp" alt="MinuteMaster Logo">
+        </div>
+        <form asp-controller="ExternalCollaborator" asp-action="GoHome" method="post">
+            <div class="form-input">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-input">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>

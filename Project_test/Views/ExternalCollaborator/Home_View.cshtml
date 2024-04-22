@@ -1,0 +1,93 @@
+﻿@{
+    Layout = "_ExternalCollaboratorLayout";
+}
+
+@{
+    // Define the ViewData Title for this view
+    ViewData["Title"] = "Dashboard";
+}
+<form asp-controller="ExternalCollaborator" asp-action="GoMeetingMinutes" method="post">
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-pink text-white">
+                Projects
+            </div>
+            <ul class="list-group list-group-flush">
+                <li>
+                    <span>Project Name</span>
+                    <span class="float-right">Monday, January 1, 2025, 5:00 PM</span>
+                <li>
+                    <span>Project Name</span>
+                    <span class="float-right">Monday, January 1, 2025, 5:00 PM</span>
+                </li>
+                <li>
+                    <span>Project Name</span>
+                    <span class="float-right">Monday, January 1, 2025, 5:00 PM</span>
+                </li>
+                <li>
+                    <span>Project Name</span>
+                    <span class="float-right">Monday, January 1, 2025, 5:00 PM</span>
+                </li>
+                <li>
+                    <span>Project Name</span>
+                    <span class="float-right">Monday, January 1, 2025, 5:00 PM</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-pink text-white">
+                Historical Meeting Minutes
+            </div>
+            <ul class="list-group list-group-flush">
+                <li>
+                    <span>Project Name</span> <br>
+                    <small>Meeting Name</small> <br>
+                    <small>Created: Monday, January 1, 2025</small>
+                    <button type="submit" class="login-btn">View</button>
+
+                </li>
+                <li>
+                    <span>Project Name</span> <br>
+                    <small>Meeting Name</small> <br>
+                    <small>Created: Monday, January 1, 2025</small>
+                    <button type="submit" class="login-btn">View</button>
+
+                </li>
+                <li>
+                    <span>Project Name</span> <br>
+                    <small>Meeting Name</small> <br>
+                    <small>Created: Monday, January 1, 2025</small>
+                    <button type="submit" class="login-btn">View</button>
+                </li>
+                <li>
+                    <span>Project Name</span> <br>
+                    <small>Meeting Name</small> <br>
+                    <small>Created: Monday, January 1, 2025</small>
+                    <button type="submit" class="login-btn">View</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</form>
+    <style>
+        .bg-pink {
+            background-color: #D7A9B7; 
+        }
+
+        .card-header {
+            font-weight: bold;
+        }
+
+        .list-group-item {
+            border: none; 
+            background-color: #F8F8F8;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>

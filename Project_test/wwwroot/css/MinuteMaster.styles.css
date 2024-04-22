@@ -1,0 +1,51 @@
+﻿body {
+    background-color: #E8E8E8;
+}
+
+.navbar-custom {
+    background-color: #7D1935; 
+}
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    .navbar-custom .navbar-toggler {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.container-custom {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.left-panel,
+.right-panel {
+    margin-bottom: 20px;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #7D1935;
+    color: white;
+    font-size: 18px;
+}
+
+.panel-body {
+    padding: 15px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
