@@ -1,0 +1,144 @@
+﻿@{
+    ViewData["Title"] = "Meeting Minutes";
+}
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="meeting-minutes-container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Objective</h5>
+                    <p class="text-muted">Actions & conditions</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Time</h5>
+                    <p class="text-muted">5 min</p>
+                    <p class="text-muted">Feb. 2, 2022</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Location</h5>
+                    <p class="text-muted">Place: Placeholder</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="meeting-title">
+                <h2>Meeting title</h2>
+                <div class="attendees">
+                    <span>Student 1</span>
+                    <span>Student 2</span>
+                    <span>Student 3</span>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <textarea class="form-control" placeholder="Notes..."></textarea>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="action-items">
+                        <button class="btn btn-outline-secondary">Action Item 1</button>
+                        <button class="btn btn-outline-secondary">Action Item 2</button>
+                        <button class="btn btn-outline-secondary">Action Item 3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .meeting-minutes-container {
+        background-color: #FFEFE9;
+        padding: 30px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .meeting-title h2 {
+        color: #4A4A4A;
+        margin-bottom: 10px;
+    }
+
+    .attendees span {
+        display: inline-block;
+        background-color: #FFFFFF;
+        color: #4A4A4A;
+        padding: 5px 15px;
+        border-radius: 15px;
+        margin-right: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        font-size: 14px;
+    }
+
+    .card {
+        background-color: #FFF7F2;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .card-body {
+        color: #4A4A4A
+    }
+
+    .card-title {
+        color: #4A4A4A;
+    }
+
+    .card-body textarea {
+        background-color: #FFFFFF;
+        color: #4A4A4A;
+        border-radius: 15px;
+        height: 150px;
+        border: none;
+        padding: 15px;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .action-items button {
+        background-color: #FFFFFF;
+        color: #4A4A4A;
+        border: 1px solid #D1D1D1;
+        margin-right: 10px;
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        background-color: #FF6B81;
+        border-color: #FF6B81;
+        color: #FFFFFF;
+        padding: 10px 25px;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        font-size: 16px;
+    }
+
+        .btn-primary:hover {
+            background-color: #E65B71;
+            border-color: #E65B71;
+        }
+
+    .btn-outline-secondary:hover {
+        background-color: #FF6B81;
+        color: white;
+        border-color: #FF6B81;
+    }
+
+</style>

@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "View Project";
+}
+@{
+    Layout = "_AdminLayout";
+}
+
+<head>
+    <style>
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            background-color: #D7A9B7;
+            color: white;
+            text-align: center;
+        }
+
+        .card-body {
+            background-color: #F8F8F8;
+            padding: 20px;
+        }
+
+        .list-unstyled {
+            padding-left: 0;
+        }
+
+        .mb-2 {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <form asp-controller="Admin" asp-action="GoMeetingMinutes" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Projects
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <strong>Twitter Clone</strong><br>
+                                <span>Created: Monday, January 1, 2025</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Historical Meeting Minutes
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <strong>Twitter Clone</strong><br>
+                                <span>Meeting Name: Flow Diagrams</span><br>
+                                <span>Created: Monday, January 9, 2025</span>
+                                <br />
+                                <button class="btn btn-primary">View</button>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Twitter Clone</strong><br>
+                                <span>Meeting Name:Basic Scope of Work</span><br>
+                                <span>Created: Monday, January 6, 2025</span>
+                                <br />
+                                <button class="btn btn-primary">View</button>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Twitter Clone</strong><br>
+                                <span>Meeting Name: Intro and Team Building</span><br>
+                                <span>Created: Monday, January 3, 2025</span>
+                                <br />
+                                <button class="btn btn-primary">View</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>

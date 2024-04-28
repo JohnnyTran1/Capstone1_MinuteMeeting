@@ -1,0 +1,74 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+<head>
+    <style>
+        .container {
+            padding-top: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #D7A9B7;
+            color: white;
+            text-align: center;
+        }
+
+        .list-group-item {
+            background-color: #F8F8F8;
+            border: none;
+        }
+
+            .list-group-item .d-flex {
+                justify-content: space-between;
+            }
+
+            .list-group-item small {
+                color: #555;
+            }
+
+            .list-group-item span {
+                cursor: pointer;
+                margin-left: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Manage Projects
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>Project Name</strong><br>
+                                    <span>Monday, January 1, 2025, 5:00 PM</span><br>
+                                </div>
+                                <div class="d-flex">
+                                    <button type="submit">❌</button>
+                                    <form asp-controller="Admin" asp-action="EditProject" method="post">
+                                        <button type="submit">✏️</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="text-center">
+                <form asp-controller="Admin" asp-action="CreateProject" method="post">
+                    <button class="btn btn-success" type="submit">➕ Add Project</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

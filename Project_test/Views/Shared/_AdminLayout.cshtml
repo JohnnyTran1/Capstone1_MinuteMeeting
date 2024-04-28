@@ -21,13 +21,16 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" asp-controller="Collaborator" asp-action="Home_View" aria-current="page">Home</a>
+                            <a class="nav-link active" asp-controller="Admin" asp-action="ViewProjects" aria-current="page">View Projects & Meeting Minutes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Collaborator" asp-action="ActionItems_View">View Action Items</a>
+                            <a class="nav-link active" asp-controller="Admin" asp-action="ManageProject" aria-current="page">Manage Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Collaborator" asp-action="ViewProjects">View Projects & Meeting Minutes</a>
+                            <a class="nav-link active" asp-controller="Admin" asp-action="CreateUser" aria-current="page">Create User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-controller="Admin" asp-action="CreateProject" aria-current="page">Create Project</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Help</a>

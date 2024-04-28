@@ -1,0 +1,73 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+	Layout = "_AdminLayout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project Settings</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Create two bootstrap columns that will both contain forms-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Edit Project</h1>
+				<label>Project Name:</label>
+				<input type="text" class="form-control" value="Twitter Clone"/>
+				<label>Project Description:</label>
+				<input type="text" class="form-control" value="Twitter is horrible lets make a new one"/>
+				<h1>Manage Collaborators</h1>
+				<!-- Create a scrollable list containing the names of people who are assigned as collaborators-->
+				<ul class="list-group" style="height: 200px; overflow-y: scroll;">
+					<li class="list-group-item">
+						<h4>Username:aarocka <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></h4>
+						<p>Name: Aaron</p>
+						<p>Email: aaron@kolker.me</p>
+						<p>Role Type:External Collaborator</p>
+					</li>
+					<li class="list-group-item">
+						<h4>Username:aandy_x <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></h4>
+						<p>Name:Andy</p>
+						<p>Email:andy@temple.edu</p>
+						<p>Role Type:Collaborator</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<h1>Assign Collaborators</h1>
+				<!-- create a text box labeled username with a search button next to the text box-->
+				<label>Username:</label>
+				<input type="text" class="form-control" style="display: inline-block; width:200px;" value="johnnytran6836" />
+				<button class="btn btn-primary" style="display: inline-block;">
+					<i class="fas fa-search"></i>
+				</button>
+				<!--Create a box that contains the Username, Name, and Email address of the searched user-->
+				<div class="card" style="width: 18rem; margin-top:10px;">
+					<div class="card-body">
+						<h5 class="card-title">Username:johnnytran6836</h5>
+						<p class="card-text">Name:Johnny Tran</p>
+						<p class="card-text">Email:johnnyT@temple.edu</p>
+						<button class="btn btn-primary">Add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Create a button that will submit the form-->
+		<div class="row"></div>
+		<button class="btn btn-primary" style="margin-top: 10px;">Create</button>
+	</div>
+	</div>
+</body>
+</html>
